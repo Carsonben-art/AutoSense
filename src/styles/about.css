@@ -1,0 +1,71 @@
+
+  .about-us {
+    padding: 4rem 2rem;
+    background: #0f2027;
+    background: linear-gradient(180deg, #000507, #010f1d, #034daf);
+    color: #f9f9f9;
+  }
+  
+  .about-us-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  
+  .mission-statement,
+  .core-values {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .mission-statement h2,
+  .core-values h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #00c9a7;
+  }
+  
+  .mission-statement p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #d1d5db;
+  }
+  
+  .core-values ul {
+    list-style: none;
+  }
+  
+  .core-values li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #d1d5db;
+  }
+  
+  .core-values li::before {
+    content: "•";
+    color: #00c9a7;
+    margin-right: 0.5rem;
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-us-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 3rem;
+    }
+  
+    .mission-statement h2,
+    .core-values h2 {
+      font-size: 1.5rem;
+    }
+  
+    .mission-statement p,
+    .core-values li {
+      font-size: 1rem;
+    }
+  }

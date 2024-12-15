@@ -1,0 +1,199 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(0deg, #000507, #010f1d, #034daf);
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero-text .badge {
+    display: inline-block;
+    background: #00c9a7;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    animation: slideIn 1.5s ease-in-out;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #d1d5db;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .hero-buttons .btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .hero-buttons .btn.primary {
+    background: #007bff;
+    color: white;
+  }
+  
+  .hero-buttons .btn.primary:hover {
+    background: #0056b3;
+  }
+  
+  .hero-buttons .btn.secondary {
+    background: white;
+    color: #007bff;
+    border: 1px solid #007bff;
+  }
+  
+  .hero-buttons .btn.secondary:hover {
+    background: #007bff;
+    color: white;
+  }
+  
+  .hero-images {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .image-stack {
+    position: relative;
+    width: 300px;
+    height: 400px;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    animation: zoomIn 1.5s ease-in-out;
+  }
+  
+  .overlay-card {
+    position: absolute;
+    top: 10%;
+    right: -10%;
+    background: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .chart-card {
+    position: absolute;
+    bottom: -10%;
+    left: -10%;
+    background: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2.5s ease-in-out;
+  }
+  
+  .chart {
+    width: 150px;
+    height: 100px;
+  }
+  .algo-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+  }
+  .bar {
+    width: 10px;
+    background: #007bff;
+    border-radius: 5px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .hero-text h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-images {
+      margin-top: 2rem;
+    }
+  }

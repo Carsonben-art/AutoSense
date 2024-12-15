@@ -1,0 +1,140 @@
+
+.contact-section {
+    background: linear-gradient(180deg, #000507, #010f1d, #034daf);
+    color: white;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .contact-text {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .contact-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-text p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact-info h3 {
+    color: #66cc99;
+    margin-bottom: 5px;
+  }
+  
+  .contact-info p {
+    margin: 0;
+  }
+  
+  .contact-map {
+    flex: 1;
+    min-height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .contact-map iframe {
+    border: none;
+    border-radius: 8px;
+  }
+  
+  /* Contact form styling */
+  .contact-form {
+    margin-top: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #0a1122;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contact-form h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #66cc99;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #004466;
+    border-radius: 5px;
+    background: #0f1a2e;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: #999999;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #66cc99;
+  }
+  
+  .submit-button {
+    background: #66cc99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background: #559977;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-map {
+      width: 100%;
+      min-height: 250px;
+    }
+  
+    .contact-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-info > div {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+  

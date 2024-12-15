@@ -1,0 +1,144 @@
+/* Base styles */
+.pricing-section {
+    background: linear-gradient(180deg, #000507, #010f1d, #034daf);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .pricing-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #cccccc;
+  }
+  
+  .stars {
+    margin-bottom: 30px;
+  }
+  
+  .stars p {
+    margin: 10px 0;
+  }
+  
+  .pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .pricing-card {
+    background: #0a1122;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .pricing-card.popular {
+    border: 2px solid #ffd700;
+  }
+  
+  .pricing-card .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #ffd700;
+    color: #0a1122;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 50px;
+  }
+  
+  .pricing-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .pricing-card .price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .pricing-card .price small {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #cccccc;
+  }
+  
+  .pricing-card ul {
+    margin: 15px 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+  }
+  
+  .pricing-card ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 1rem;
+  }
+  
+  .pricing-card ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #66cc99;
+  }
+  
+  .pricing-card .button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .button.primary {
+    background: #66cc99;
+    color: white;
+  }
+  
+  .button.primary:hover {
+    background: #559977;
+  }
+  
+  .button.highlight {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+  }
+  
+  .button.highlight:hover {
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+  }
+  
+  .button.secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid #66cc99;
+  }
+  
+  .button.secondary:hover {
+    background: #66cc99;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .pricing-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
