@@ -36,7 +36,7 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <p>©2024 AutoSense. All rights reserved.</p>
-        <p>Kintech</p>
+        <p>Kintech Softwares</p>
       </div>
     </footer>
   );

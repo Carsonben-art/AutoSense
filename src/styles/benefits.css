@@ -104,4 +104,11 @@
     font-size: 14px;
     color: #aaa;
   }
-  
+  @media (max-width: 480px) {
+    .stats{
+      width: 100%;
+    }
+    .stat{
+      width: 100%;
+    }
+  }

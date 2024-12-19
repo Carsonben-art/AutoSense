@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: center;
     padding: 2rem;
+    padding-top: 4rem;
     background: linear-gradient(0deg, #000507, #010f1d, #034daf);
     color: white;
     min-height: 100vh;

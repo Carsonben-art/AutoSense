@@ -10,8 +10,7 @@ const PricingSection = () => {
       frequency: "One-time payment",
       features: [
         "1 machine only",
-        "Up to 2,000 contacts",
-        "Unlimited stories",
+        "Unlimited Servicing",
       ],
       buttonText: "Try Now",
       buttonType: "primary",
@@ -24,8 +23,7 @@ const PricingSection = () => {
       features: [
         "Everything in Starter plan, plus",
         "7-days story version history",
-        "Up to 10,000 contacts",
-        "Custom sender addresses",
+        "Custom AI",
       ],
       buttonText: "Get Started",
       buttonType: "highlight",
@@ -40,7 +38,6 @@ const PricingSection = () => {
         "Everything in Core plan, plus",
         "5 machines included",
         "90-days story version history",
-        "Up to 20,000 contacts",
       ],
       buttonText: "Contact Us",
       buttonType: "secondary",

@@ -14,11 +14,11 @@ const Contacts = () => {
           <div className="contact-info">
             <div>
               <h3>Address</h3>
-              <p>00100 Nairobi, Kenya. | Ngong Road 316 Chembers</p>
+              <p>00100 Nairobi, Kenya. | 72680 00200</p>
             </div>
             <div>
               <h3>Contact</h3>
-              <p>autosense@gmail.com</p>
+              <p>contact@autosenserobotics.com</p>
             </div>
           </div>
         </div>
